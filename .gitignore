@@ -1,0 +1,27 @@
+.idea
+*.iml
+node_modules
+
+# Generated
+www/style
+www/js
+www/fonts
+
+
+# Cordoba
+# Android
+platforms/android/assets/www
+platforms/android/bin/
+platforms/android/gen/
+platforms/android/res/xml/config.xml
+
+# iOS
+platforms/ios/build/
+platforms/ios/CordovaLib/build/
+platforms/ios/www
+platforms/ios/TvChous/config.xml
+platforms/ios/.staging
+
+# Emulator logs
+platforms/ios/cordova/console.log
+

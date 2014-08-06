@@ -1,0 +1,5 @@
+ion-view(title="Shows")
+  ion-content(ng-controller="SeasonController")
+    ion-list
+      ion-item(ng-repeat="episode in season.episodes")
+        h2 {{episode.fullId}} {{episode.title}}

@@ -1,0 +1,8 @@
+ion-view(title="Show")
+  ion-content(ng-controller="ShowController")
+    ion-list
+      ion-item.item-thumbnail-left(ng-repeat="season in show.seasons", ui-sref="season({showId: show.id, seasonId: season.id})")
+        img(ng-src="{{season.poster}}")
+        h2 Season {{season.id}}
+        p Episodes {{season.episodes_count}}
+        p {{show.title}}
