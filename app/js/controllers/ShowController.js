@@ -8,11 +8,8 @@ class ShowController extends Controller {
     var showId = $stateParams.showId;
 
     client.call("findShow", showId).then(function (show) {
-      $scope.$apply(function () {
-        $scope.show = show;
-      });
+      $scope.show = show;
     });
-
   }
 }
 

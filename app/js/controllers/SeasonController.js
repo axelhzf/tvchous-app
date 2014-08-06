@@ -9,9 +9,7 @@ class SeasonController extends Controller {
     var seasonId = $stateParams.seasonId;
 
     client.call("findSeason", showId, seasonId).then(function (season) {
-      $scope.$apply(function () {
-        $scope.season = season;
-      });
+      $scope.season = season;
     });
   }
 }
